@@ -1,1 +1,1 @@
-# LocalAI-
+# LocalAI+
