@@ -25,3 +25,37 @@ dist-ssr
 .env
 
 venv/
+# Docker-related files
+*.pid
+.docker/
+docker-compose.override.yml
+
+# Python cache and build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.Python
+build/
+
+# LocalAI+ specific data directories
+data/
+plugins/uploads/
+*.db
+*.sqlite
+*.sqlite3
+
+# OS-specific files
+Thumbs.db
+ehthumbs.db
+
+# Frontend build artifacts (additional)
+.next/
+.cache/
+.parcel-cache/
+coverage/
+
+# Environment files (additional security)
+.env.*
+!.env.example
