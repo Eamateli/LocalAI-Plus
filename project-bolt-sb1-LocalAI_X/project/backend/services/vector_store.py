@@ -2,7 +2,7 @@
 Vector store service using Qdrant
 """
 
-from qdrant_client import QdrantClient
+from qdrant_client import AsyncQdrantClient
 from qdrant_client.http import models
 from typing import List, Dict, Any, Optional
 import uuid
@@ -16,10 +16,11 @@ class VectorStoreService:
     """Service for vector storage and similarity search using Qdrant"""
     
     def __init__(self):
-        self.client = QdrantClient(
+        self.client = AsyncQdrantClient(
             host=settings.QDRANT_HOST,
             port=settings.QDRANT_PORT,
-            api_key=settings.QDRANT_API_KEY
+            api_key=settings.QDRANT_API_KEY,
+            https=settings.QDRANT_USE_HTTPS
         )
         self.collection_name = settings.VECTOR_COLLECTION_NAME
     

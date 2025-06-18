@@ -26,6 +26,7 @@ class Settings(BaseSettings):
     TEMPERATURE: float = 0.7
     
     # Vector Store Configuration
+    QDRANT_USE_HTTPS: bool = False
     QDRANT_HOST: str = "localhost"
     QDRANT_PORT: int = 6333
     QDRANT_API_KEY: Optional[str] = None
