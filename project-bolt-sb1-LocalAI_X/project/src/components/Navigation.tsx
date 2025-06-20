@@ -32,7 +32,7 @@ export function Navigation() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/ChatGPT Image Jun 17, 2025, 02_51_59 AM copy.png" 
+              src="/Image_navbar_logo.png" 
               alt="LocalAI+ Logo" 
               className="w-8 h-8 rounded-lg object-cover"
             />

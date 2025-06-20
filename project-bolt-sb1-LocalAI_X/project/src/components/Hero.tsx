@@ -1,8 +1,20 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Zap, ArrowRight, Shield, Cpu, Database } from 'lucide-react';
 
+
 export function Hero() {
+  const navigate = useNavigate();
+
+  const handleTryAPI = () => {
+    navigate('/playground');
+  };
+
+  const handleViewDocumentation = () => {
+    navigate('/docs');
+  };
+
   return (
     <section className="relative py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -52,6 +64,7 @@ export function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
               <motion.button
+                onClick={handleTryAPI}
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center space-x-2 shadow-lg"
@@ -61,6 +74,7 @@ export function Hero() {
               </motion.button>
               
               <motion.button
+                onClick={handleViewDocumentation}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="border border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all"
