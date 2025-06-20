@@ -74,7 +74,7 @@ app = FastAPI(
     """,
     version="1.0.0",
     contact={
-        "name": "LocalAI+ Team",
+        "name": "LocalAI+ Github",
         "url": "https://github.com/Eamateli/LocalAI-Plus/tree/main/project-bolt-sb1-LocalAI_X/project",
     },
     license_info={
