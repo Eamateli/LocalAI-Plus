@@ -264,7 +264,7 @@ class WeatherPlugin:
               
               <div className="mt-6 pt-6 border-t border-white/10">
                 <a
-                  href="/docs"
+                  href="http://localhost:8000/docs"
                   className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors"
                 >
                   <ExternalLink className="w-4 h-4" />
