@@ -1,4 +1,4 @@
-# LocalAI+ 🚀
+# LocalAI+ 🚀 ### (project-bolt-sb1-LocalAI_X)
 
 **Production-Ready OpenAI-Compatible API for Local LLMs**
 
