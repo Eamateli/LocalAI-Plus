@@ -208,7 +208,7 @@ export function APIPlayground() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-8 leading-normal px-2 pb-2">
             API Playground
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
