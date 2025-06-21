@@ -4,10 +4,11 @@ import { Send, Copy, Check, PlayCircle, Settings, Terminal, Loader } from 'lucid
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import toast from 'react-hot-toast';
-import { apiService } from '../services/api';
+import { apiService } from '../services/api'; 
+type EndpointType = 'chat' | 'embeddings' | 'tools' | 'code';
 
 export function APIPlayground() {
-  const [activeEndpoint, setActiveEndpoint] = useState('chat');
+  const [activeEndpoint, setActiveEndpoint] = useState<EndpointType>('chat');
   const [loading, setLoading] = useState(false);
   const [copied, setCopied] = useState(false);
   const [response, setResponse] = useState('');
@@ -20,7 +21,7 @@ export function APIPlayground() {
     { id: 'code', name: 'Code Interpreter', icon: '🐍' }
   ];
 
-  const exampleRequests = {
+  const exampleRequests: Record<EndpointType, any> = {
     chat: {
       url: '/v1/chat/completions',
       method: 'POST',
@@ -141,7 +142,7 @@ export function APIPlayground() {
       console.error('Request failed:', error);
       
       // Fallback to mock responses for demo
-      const mockResponses = {
+      const mockResponses: Record<EndpointType, any> = {
         chat: {
           id: 'chatcmpl-abc123',
           object: 'chat.completion',
@@ -233,7 +234,7 @@ export function APIPlayground() {
                 {endpoints.map((endpoint) => (
                   <button
                     key={endpoint.id}
-                    onClick={() => setActiveEndpoint(endpoint.id)}
+                    onClick={() => setActiveEndpoint(endpoint.id as EndpointType)}
                     className={`w-full text-left flex items-center space-x-3 p-3 rounded-lg transition-all ${
                       activeEndpoint === endpoint.id
                         ? 'bg-blue-500/20 border border-blue-500/30 text-white'
