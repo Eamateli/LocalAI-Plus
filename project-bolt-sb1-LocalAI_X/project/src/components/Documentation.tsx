@@ -209,7 +209,7 @@ class WeatherPlugin:
   };
 
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8 min-h-screen">
+    <section className="pt-20 py-12 px-4 sm:px-6 lg:px-8 min-h-screen">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
