@@ -10,6 +10,7 @@ import { Footer } from './components/Footer';
 import { Dashboard } from './components/Dashboard';
 import { ModelManager } from './components/ModelManager';
 import { PluginManager } from './components/PluginManager';
+import { Chat } from './pages';
 
 function HomePage() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/chat" element={<Chat />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/models" element={<ModelManager />} />
           <Route path="/plugins" element={<PluginManager />} />
