@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import { 
   Menu, 
   X, 
-  Home, 
+  Home,
+  MessageSquare, 
   BarChart3, 
   Cpu, 
   Puzzle, 
@@ -18,6 +19,7 @@ export function Navigation() {
 
   const navItems = [
     { path: '/', label: 'Home', icon: Home },
+    { path: '/chat', label: 'Chat', icon: MessageSquare }, 
     { path: '/dashboard', label: 'Dashboard', icon: BarChart3 },
     { path: '/models', label: 'Models', icon: Cpu },
     { path: '/plugins', label: 'Plugins', icon: Puzzle },
