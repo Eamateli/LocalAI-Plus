@@ -45,4 +45,3 @@ export function ModelSelector({ selectedModel, onModelChange }: ModelSelectorPro
   );
 }
 
-export { ModelSelector };
