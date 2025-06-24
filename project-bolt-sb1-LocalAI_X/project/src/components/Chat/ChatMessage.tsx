@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hash, Tool, User, Bot } from 'lucide-react';
+import { Hash, Wrench, User, Bot } from 'lucide-react';
 import { ChatMessage as ChatMessageType } from '../../api/chat';
 
 interface ChatMessageProps {
@@ -32,7 +32,7 @@ export function ChatMessage({ message, index }: ChatMessageProps) {
           {message.toolCalls && message.toolCalls.length > 0 && (
             <div className="mt-2 p-2 bg-amber-500/20 border border-amber-500/30 rounded-lg">
               <div className="flex items-center gap-2 text-amber-300 text-sm">
-                <Tool className="w-4 h-4" />
+                <Wrench className="w-4 h-4" />
                 <span className="font-semibold">Function Call:</span>
                 <code>{message.toolCalls[0].function.name}()</code>
               </div>
