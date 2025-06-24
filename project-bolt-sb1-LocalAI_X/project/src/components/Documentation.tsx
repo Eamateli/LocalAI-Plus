@@ -381,3 +381,5 @@ class WeatherPlugin:
     </section>
   );
 }
+
+export default Documentation;

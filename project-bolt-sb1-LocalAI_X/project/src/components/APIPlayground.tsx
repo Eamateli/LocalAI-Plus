@@ -5,9 +5,10 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import toast from 'react-hot-toast';
 import { apiService } from '../services/api'; 
+
 type EndpointType = 'chat' | 'embeddings' | 'tools' | 'code';
 
-export function APIPlayground() {
+function APIPlayground() {
   const [activeEndpoint, setActiveEndpoint] = useState<EndpointType>('chat');
   const [loading, setLoading] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -363,3 +364,5 @@ export function APIPlayground() {
     </section>
   );
 }
+
+export default React.memo(APIPlayground);

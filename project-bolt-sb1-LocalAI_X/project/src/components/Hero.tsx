@@ -3,8 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Zap, ArrowRight, Shield, Cpu, Database } from 'lucide-react';
 
-
-export function Hero() {
+function Hero() {
   const navigate = useNavigate();
 
   const handleTryAPI = () => {
@@ -126,3 +125,5 @@ export function Hero() {
     </section>
   );
 }
+
+export default Hero;
