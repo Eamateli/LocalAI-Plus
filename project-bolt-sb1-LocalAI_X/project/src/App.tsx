@@ -7,11 +7,16 @@ import { FeatureGrid } from './components/FeatureGrid';
 import { APIPlayground } from './components/APIPlayground';
 import { Documentation } from './components/Documentation';
 import { Footer } from './components/Footer';
-import { Dashboard } from './components/Dashboard';
-import { ModelManager } from './components/ModelManager';
-import { PluginManager } from './components/PluginManager';
-import { Chat } from './pages';
+// import { Dashboard } from './components/Dashboard';
+// import { ModelManager } from './components/ModelManager';
+// import { PluginManager } from './components/PluginManager';
+// import { Chat } from './pages';
+import { lazy, Suspense } from 'react';
 
+const Dashboard = lazy(() => import('./components/Dashboard'));
+const ModelManager = lazy(() => import('./components/ModelManager'));
+const PluginManager = lazy(() => import('./components/PluginManager'));
+const Chat = lazy(() => import('./pages/Chat'));
 
 function HomePage() {
   return (
@@ -29,6 +34,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
         <Navigation />
+        <Suspense fallback={<div className="text-white p-8">Loading...</div>}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/chat" element={<Chat />} />
@@ -38,6 +44,7 @@ function App() {
           <Route path="/playground" element={<APIPlayground />} />
           <Route path="/docs" element={<Documentation />} />
         </Routes>
+        </Suspense>
         <Footer />
         <Toaster 
           position="top-right"

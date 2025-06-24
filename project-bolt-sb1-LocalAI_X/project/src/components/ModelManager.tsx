@@ -387,3 +387,5 @@ export function ModelManager() {
     </div>
   );
 }
+
+export default ModelManager;
