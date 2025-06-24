@@ -494,3 +494,5 @@ PLUGIN_INFO = {
     </div>
   );
 }
+
+export default PluginManager;
