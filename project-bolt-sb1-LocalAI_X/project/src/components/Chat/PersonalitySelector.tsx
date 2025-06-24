@@ -15,7 +15,7 @@ const PERSONALITIES: Personality[] = [
     name: 'General Assistant',
     description: 'Helpful, harmless, and honest AI assistant',
     icon: <Sparkles className="w-4 h-4" />,
-    systemPrompt: 'You are a helpful, harmless, and honest AI assistant.'
+    systemPrompt: ''
   },
   {
     id: 'coder',
