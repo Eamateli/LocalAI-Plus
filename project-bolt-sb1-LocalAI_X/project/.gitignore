@@ -59,3 +59,6 @@ coverage/
 # Environment files (additional security)
 .env.*
 !.env.example
+
+# Virtual environment
+venv/
