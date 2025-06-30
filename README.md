@@ -5,6 +5,7 @@
 
 LocalAI+ is a comprehensive platform that wraps local LLMs with missing capabilities found in cloud APIs. It provides an OpenAI-compatible interface with advanced features like function calling, embeddings, code interpretation, and a plugin system. 
 <img width="950" alt="Screenshot 2025-06-21 230553" src="https://github.com/user-attachments/assets/404e2dd3-84bf-4c29-9a1c-96a92baac0bd" />
+<img width="930" alt="Screenshot 2025-06-30 212433" src="https://github.com/user-attachments/assets/f97710f8-5452-47c0-ab29-7d8142827013" />
 
 ## ✨ Features
 
