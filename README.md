@@ -1,9 +1,9 @@
 # LocalAI+ 🚀
 
-
 **OpenAI-Compatible API for Local LLMs**
 
 LocalAI+ is a comprehensive platform that wraps local LLMs with missing capabilities found in cloud APIs. It provides an OpenAI-compatible interface with advanced features like function calling, embeddings, code interpretation, and a plugin system. 
+
 <img width="950" alt="Screenshot 2025-06-21 230553" src="https://github.com/user-attachments/assets/404e2dd3-84bf-4c29-9a1c-96a92baac0bd" />
 <img width="930" alt="Screenshot 2025-06-30 212433" src="https://github.com/user-attachments/assets/f97710f8-5452-47c0-ab29-7d8142827013" />
 
@@ -31,7 +31,7 @@ LocalAI+ is a comprehensive platform that wraps local LLMs with missing capabili
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/localai-plus/localai-plus
+   git clone https://github.com/Eamateli/LocalAI-Plus/tree/main
    cd localai-plus
    ```
 
@@ -300,7 +300,7 @@ LocalAI+ comes with several built-in tools:
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+We welcome contributions! Please see our [Contributing Guide](https://github.com/Eamateli/LocalAI-Plus/tree/main/CONTRIBUTING.md) for details.
 
 1. Fork the repository
 2. Create a feature branch
@@ -310,7 +310,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ## 📄 License
 
-LocalAI+ is open source software licensed under the [MIT License](LICENSE).
+LocalAI+ is open source software licensed under the [MIT License](https://github.com/Eamateli/LocalAI-Plus/tree/main/LICENSE).
 
 ## 🙏 Acknowledgments
 
@@ -323,8 +323,8 @@ LocalAI+ is open source software licensed under the [MIT License](LICENSE).
 ## 🆘 Support
 
 - 📖 [Documentation](http://localhost:8000/docs)
-- 🐛 [Issues](https://github.com/localai-plus/localai-plus/issues)
-- 💬 [Discussions](https://github.com/localai-plus/localai-plus/discussions)
+- 🐛 [Issues](https://github.com/Eamateli/LocalAI-Plus/tree/main/issues)
+- 💬 [Discussions](https://github.com/Eamateli/LocalAI-Plus/tree/main/discussions)
 - 🔗 [Discord Community](https://discord.gg/localai-plus)
 
 ---
